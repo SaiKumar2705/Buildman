@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/sites_names_usersites_row"
+        style="@style/Listview_normal_row_textview"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="12234" />
+
+
+</RelativeLayout>
+  
+

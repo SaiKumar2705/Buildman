@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/material_used_material_row"
+        style="@style/Listview_row_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+        android:text="material" />
+
+    <TextView
+        android:id="@+id/currentstock_title_used_material_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_below="@+id/material_used_material_row"
+        android:layout_toLeftOf="@+id/currentstock_used_material_row"
+
+        android:gravity="right"
+
+        android:text="@string/curentstock" />
+
+    <TextView
+        android:id="@+id/currentstock_used_material_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_below="@+id/material_used_material_row"
+        android:layout_toLeftOf="@+id/units_used_material_row"
+
+        android:gravity="right"
+
+        android:text="12" />
+
+    <TextView
+        android:id="@+id/units_used_material_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_width="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/material_used_material_row"
+        android:gravity="right"
+        android:text="units" />
+
+
+</RelativeLayout>

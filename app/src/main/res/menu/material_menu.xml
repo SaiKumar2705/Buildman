@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/syn_materialmenu"
+        android:icon="@drawable/syn"
+        android:showAsAction="always"
+        android:title="@string/synchornising"></item>
+
+    <item
+        android:id="@+id/home_materialmenu"
+        android:icon="@drawable/homemenu"
+        android:showAsAction="always"
+        android:title="@string/home">
+
+        <menu>
+
+
+            <!--  <item android:id="@+id/manpower_materialmenu"
+                   android:icon="@drawable/manpower_menu"
+                   android:title="@string/manpower"
+                    android:showAsAction="always" />
+
+             <item android:id="@+id/machinery_materialmenu"
+                   android:icon="@drawable/machinery_menu"
+                   android:title="@string/machinery"
+                    android:showAsAction="always"/>
+
+             <item android:id="@+id/expenses_materialmenu"
+                   android:icon="@drawable/expenses_menu"
+                   android:title="@string/expenses"
+                    android:showAsAction="always"/>
+
+                 <item android:id="@+id/status_materialmenu"
+                   android:icon="@drawable/status_menu"
+                   android:title="@string/status"
+                    android:showAsAction="always"/>
+
+                     <item android:id="@+id/settings_materialmenu"
+                   android:icon="@drawable/setting"
+                   android:title="@string/settings"
+
+                    android:showAsAction="always"/> -->
+
+            <item
+                android:id="@+id/house_materialmenu"
+                android:icon="@drawable/housemenu"
+                android:showAsAction="always"
+
+                android:title="@string/home" />
+
+            <item
+                android:id="@+id/site_chart_materialmenu"
+                android:icon="@drawable/barchart"
+                android:showAsAction="always"
+
+                android:title="@string/site_chart" />
+
+            <item
+                android:id="@+id/material_chart_materialmenu"
+                android:icon="@drawable/barchart"
+                android:showAsAction="always"
+
+                android:title="@string/material_chart" />
+
+            <item
+                android:id="@+id/choose_material_materialmenu"
+                android:icon="@drawable/materials_list"
+                android:showAsAction="always"
+
+                android:title="@string/choose_material" />
+
+            <item
+                android:id="@+id/switchsite_materialmenu"
+                android:icon="@drawable/switchsite"
+                android:showAsAction="always"
+
+                android:title="@string/switchsite" />
+
+
+            <item
+                android:id="@+id/logout_materialmenu"
+                android:icon="@drawable/logout"
+                android:showAsAction="always"
+                android:title="@string/logout" />
+        </menu>
+
+    </item>
+
+</menu>

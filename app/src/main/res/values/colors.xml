@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="bluelight">#8d8d8d</color>
+    <color name="darkgray">#848484</color>
+    <color name="darkgray_text">#3f3f3f</color>
+    <color name="gray_bar_material">#bababa</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#f9c006</color>
+    <color name="blackdark">#000000</color>
+    <color name="gray">#F2F2F2</color>
+    <color name="gray_text">#6f6f6f</color>
+    <color name="gray_background">#8d8d8d</color>
+    <color name="yellowlight">#f8cc75</color>
+    <color name="orange">#FD6721</color>
+    <color name="blacklight">#0A0D2A</color>
+    <color name="trance">#00000000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Transparent">#00000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="disable">#b7b3ce</color>
+    <color name="enable">#00327b</color>
+    <color name="colorPrimaryBlue">#3F51B5</color>
+    <color name="block">#000000</color>
+    <color name="cardcolor">#fee8fd</color>
+    <color name="cardcolors">#00FFFF</color>
+
+</resources>

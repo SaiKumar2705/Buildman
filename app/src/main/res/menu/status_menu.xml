@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item android:id="@+id/syn_statusmenu"
+          android:icon="@drawable/syn"
+          android:title="@string/synchornising" 
+          android:showAsAction="always"          
+          >
+   </item>
+ 
+    <item android:id="@+id/home_statusmenu"
+          android:icon="@drawable/homemenu"
+         android:title="@string/home" 
+          android:showAsAction="always"          
+          >          
+        
+<menu>   
+  
+ 
+  
+            
+          <item android:id="@+id/house_statusmenu"
+          android:icon="@drawable/housemenu"
+          android:title="@string/home" 
+          
+           android:showAsAction="always"/>
+             
+           <item android:id="@+id/statusreport_statusmenu"
+          android:icon="@drawable/status_report"
+          android:title="@string/status_report" 
+          
+           android:showAsAction="always"/>
+              
+          <item android:id="@+id/last_syn_report_statusmenu"
+          android:icon="@drawable/status_report"
+          android:title="@string/last_syn_report" 
+          
+           android:showAsAction="always"/>  
+             
+                <item android:id="@+id/switchsite_statusmenu"
+          android:icon="@drawable/switchsite"
+          android:title="@string/switchsite" 
+          
+           android:showAsAction="always"/>
+                
+ 
+    <item android:id="@+id/logout_statusmenu"
+          android:icon="@drawable/logout"
+          android:title="@string/logout"
+           android:showAsAction="always" />
+</menu>
+        
+ </item>
+ 
+</menu>

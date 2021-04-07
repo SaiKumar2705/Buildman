@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/homebackground"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/project_doc_img_home"
+                    style="@style/Home_Down_Imgview"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/projectdocuments" />
+
+                <TextView
+                    android:id="@+id/project_doc_txv_home"
+                    style="@style/Home_Down_Textview"
+                    android:layout_below="@+id/project_doc_img_home"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/home_down_textview_from_margin_top"
+                    android:text="@string/project_doc"
+                    android:textColor="@color/blackdark" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/buildman_home"
+                style="@style/CustomTextview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="180dp"
+                android:padding="4dp"
+                android:text="@string/buildman"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/buildman_home"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/buildmantechnologies_home"
+                style="@style/CustomTextview"
+                android:layout_below="@+id/buildman_home"
+                android:layout_centerHorizontal="true"
+                android:padding="2dp"
+                android:text="@string/poweredbuildmantechnologies"
+                android:textColor="@color/blackdark"
+                android:textSize="@dimen/poweredbuildmanTechnologies_home" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/material_img_home"
+                        style="@style/Home_Down_Imgview"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/material" />
+
+                    <TextView
+                        android:id="@+id/material_txv_home"
+                        style="@style/Home_Down_Textview"
+                        android:layout_below="@+id/material_img_home"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/home_down_textview_from_margin_top"
+                        android:text="@string/materials"
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"></RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/manpower_img_home"
+                        style="@style/Home_Down_Imgview"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/manpower" />
+
+                    <TextView
+                        android:id="@+id/manpower_txt_home"
+
+                        style="@style/Home_Down_Textview"
+                        android:layout_below="@+id/manpower_img_home"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/home_down_textview_from_margin_top"
+                        android:text="@string/manpower" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"></RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/machinery_img_home"
+                        style="@style/Home_Down_Imgview"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/machinery" />
+
+                    <TextView
+                        android:id="@+id/machinery_txt_home"
+                        style="@style/Home_Down_Textview"
+                        android:layout_below="@+id/machinery_img_home"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/home_down_textview_from_margin_top"
+                        android:text="@string/machinery" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"></RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/expenses_img_home"
+                        style="@style/Home_Down_Imgview"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/expenses" />
+
+                    <TextView
+                        android:id="@+id/expenses_txv__home"
+                        style="@style/Home_Down_Textview"
+                        android:layout_below="@+id/expenses_img_home"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/home_down_textview_from_margin_top"
+                        android:text="@string/expenses" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"></RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/status_img_home"
+                        style="@style/Home_Down_Imgview"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/status" />
+
+                    <TextView
+                        android:id="@+id/status_txt_home"
+                        style="@style/Home_Down_Textview"
+                        android:layout_below="@+id/status_img_home"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/home_down_textview_from_margin_top"
+                        android:text="@string/status" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

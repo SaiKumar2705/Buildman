@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/task_name_status_report_child_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+        android:text="South finishing wall"
+        android:textColor="@color/blackdark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/balance_qty_status_report_child_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/billable_amt_status_report_child_row"
+
+        android:gravity="start"
+        android:text="Balc Qty.10.00" />
+
+
+    <TextView
+        android:id="@+id/billable_amt_status_report_child_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/task_name_status_report_child_row"
+
+        android:gravity="left"
+        android:text="billable+amt" />
+
+    <TextView
+        android:id="@+id/qtycompleted_status_report_child_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_below="@+id/billable_amt_status_report_child_row"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="left"
+        android:text="completed_qty" />
+    <!--  <TextView
+        android:id="@+id/units_qtycompleted_status_report_child_row"
+        style="@style/Listview_subtext_row_textview"
+        
+       android:layout_alignParentRight="true"
+      
+        android:gravity="right"
+        android:text="Kgs"
+          /> -->
+
+    <TextView
+        android:id="@+id/totalqty_status_report_child_row"
+        style="@style/Listview_subtext_row_textview"
+
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/billable_amt_status_report_child_row"
+
+        android:gravity="left"
+
+
+        android:text="total_qty" />
+
+
+</RelativeLayout>

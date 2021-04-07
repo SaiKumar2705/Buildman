@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/date_view_stock_history_dialog_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentLeft="true"
+
+
+        android:gravity="left"
+        android:text="10-12-2015" />
+
+    <TextView
+        android:id="@+id/received_view_stock_history_dialog_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/date_view_stock_history_dialog_row"
+
+
+        android:gravity="right"
+        android:text="12.00" />
+    <!--  <TextView
+            android:id="@+id/dummy_view_stock_history_dialog_row"         
+            style="@style/Listview_subtext_row_textview"
+       		android:layout_centerHorizontal="true"      		
+             /> -->
+    <TextView
+        android:id="@+id/used_view_stock_history_dialog_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_below="@+id/date_view_stock_history_dialog_row"
+
+        android:layout_centerHorizontal="true"
+        android:gravity="right"
+        android:text="12.00" />
+
+    <TextView
+        android:id="@+id/indent_view_stock_history_dialog_row"
+
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/date_view_stock_history_dialog_row"
+        android:gravity="right"
+        android:text="12.00" />
+</RelativeLayout>

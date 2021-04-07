@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/issues_title_issues_status_descrp_dialog"
+            style="@style/Edittext_Style"
+            android:layout_marginTop="10dp"
+            android:hint="@string/issues_title"
+            android:inputType="textCapSentences"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/issues_details_issues_status_descrp_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/issues_details"
+            android:maxLines="5"
+            android:padding="5dp"
+            android:textSize="@dimen/medium_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linear1"
+        android:layout_above="@+id/relativ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/listview_linearlayout_images_status_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+            <GridView
+                android:id="@+id/listViewDisImg"
+                style="@style/Listview"
+                android:layout_margin="5dp"
+                android:divider="@color/yellow"
+                android:dividerHeight="5dip"
+                android:numColumns="2"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+           android:id="@+id/btnAddImg"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Add Image"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/cancel_btn_issues_status_descrp_dialog"
+            style="@style/Buttons_Down"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@+id/view_divider"
+            android:text="@string/cancel" />
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/confirm_btn_issues_status_descrp_dialog"
+            style="@style/Buttons_Down"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/view_divider"
+            android:text="@string/confirm" />
+    </RelativeLayout>
+
+</RelativeLayout>

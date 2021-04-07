@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/issue_creation_issue_status_description_row"
+        style="@style/Listview_row_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+        android:text="south wall finishing" />
+
+    <TextView
+        android:id="@+id/issue_title_issue_status_description_row"
+        style="@style/Listview_row_textview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+        android:text="south wall finishing"
+
+        />
+
+</RelativeLayout>

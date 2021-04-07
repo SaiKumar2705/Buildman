@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+ <item android:id="@+id/home_loginmenu"
+          android:icon="@drawable/homemenu"
+          android:title="@string/home" 
+          android:showAsAction="always"
+          
+          >
+          <menu>
+    
+    <item android:id="@+id/settings_loginmenu"
+          android:icon="@drawable/setting"
+          android:title="@string/settings" 
+          
+           android:showAsAction="always"/>
+ <item android:id="@+id/switchsite_loginmenu"
+          android:icon="@drawable/switchsite"
+          android:title="@string/switchsite" 
+          
+           android:showAsAction="always"/>
+    <item android:id="@+id/logout_loginmenu"
+          android:icon="@drawable/logout"
+          android:title="@string/logout"
+           android:showAsAction="always" />
+ 
+</menu>
+ </item>
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/taskname_status_status_row"
+        style="@style/Listview_row_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:gravity="left"
+        android:text="south wall finishing"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/startdate_status_status_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/taskname_status_status_row"
+
+        android:layout_marginLeft="35dp"
+        android:gravity="left"
+        android:text="19-10-2015 20:10:16" />
+    <ImageView
+        android:id="@+id/imageViewclock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/qty_title_status_status_row"
+        android:layout_below="@+id/taskname_status_status_row" />
+
+
+
+    <TextView
+        android:id="@+id/qty_title_status_status_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_below="@+id/taskname_status_status_row"
+        android:layout_toLeftOf="@+id/qty_status_status_row"
+
+        android:gravity="right"
+
+        android:text="@string/curent_qty" />
+
+    <TextView
+        android:id="@+id/qty_status_status_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_below="@+id/taskname_status_status_row"
+        android:layout_toLeftOf="@+id/units_status_status_row"
+
+        android:gravity="right"
+        android:text="0.00" />
+
+    <TextView
+        android:id="@+id/units_status_status_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_width="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/taskname_status_status_row"
+        android:gravity="right"
+        android:text="Kgs" />
+
+</RelativeLayout>

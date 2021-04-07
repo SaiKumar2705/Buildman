@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/contractor_supply_manpower_row"
+        style="@style/Listview_row_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+        android:text="Contracor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labour_type_supply_manpower_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentLeft="true"
+
+        android:layout_below="@+id/contractor_supply_manpower_row"
+
+        android:text="Male" />
+
+    <TextView
+        android:id="@+id/today_qty_title_supply_manpower_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_below="@+id/labour_type_supply_manpower_row"
+        android:layout_toLeftOf="@+id/today_qty_supply_manpower_row"
+
+        android:gravity="right"
+
+        android:text="@string/today_qty" />
+
+    <TextView
+        android:id="@+id/today_qty_supply_manpower_row"
+
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/labour_type_supply_manpower_row"
+
+        android:gravity="right"
+        android:text="12" />
+
+    <TextView
+        android:id="@+id/total_till_date_qty_title_supply_manpower_row"
+        style="@style/Listview_subtext_row_textview"
+
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/labour_type_supply_manpower_row"
+
+        android:text="@string/total_till_date_qty" />
+
+    <TextView
+        android:id="@+id/total_till_date_qty_supply_manpower_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_below="@+id/labour_type_supply_manpower_row"
+        android:layout_toRightOf="@+id/total_till_date_qty_title_supply_manpower_row"
+        android:gravity="right"
+
+        android:text="0" />
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/issue_images_status_description_row"
+        style="@style/Thumb_Imageview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher"/>
+    <TextView
+        android:id="@+id/issuess_images_creation_date_images_status_description_row"
+        style="@style/Listview_row_textview"
+        android:layout_alignBottom="@+id/thumbimg_images_status_description_row"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="south wall finishing fgthjgkhjljhlk xdhgfjgbhk sdrg btryh dfhgjkhk " />
+
+</RelativeLayout>

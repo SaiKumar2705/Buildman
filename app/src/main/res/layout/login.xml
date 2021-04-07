@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebackground"
+    android:orientation="vertical">
+    <include  layout="@layout/tool_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/buildman_txv_login"
+            style="@style/CustomTextview"
+
+            android:layout_centerInParent="true"
+            android:padding="4dp"
+            android:text="@string/buildman"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/buildman_home"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/buildmantechnologies_login"
+            style="@style/CustomTextview"
+            android:layout_below="@+id/buildman_txv_login"
+            android:layout_centerHorizontal="true"
+            android:padding="2dp"
+            android:text="@string/poweredbuildmantechnologies"
+            android:textColor="@color/blackdark"
+            android:textSize="@dimen/poweredbuildmanTechnologies_home" />
+
+        <TextView
+            android:id="@+id/version_login"
+            style="@style/CustomTextview"
+            android:layout_below="@+id/buildmantechnologies_login"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/buildmantechnologies_login"
+            android:padding="2dp"
+            android:text="@string/version_test"
+            android:textColor="@color/blackdark"
+            android:textSize="8dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/email_id_edt_login"
+            style="@style/Edittext_Style"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/boxborder"
+            android:hint="@string/email_id"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/password_edt_login"
+            style="@style/Edittext_Style"
+            android:layout_below="@+id/email_id_edt_login"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boxborder"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <CheckBox
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/password_edt_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="@dimen/_12sdp"
+            android:text="   Remember me"
+            android:textColor="#ffffff"
+            android:buttonTint="#ffffff"
+            android:id="@+id/chackBoxRememerme"/>
+
+        <Button
+            android:id="@+id/login_btn_login"
+            style="@style/Buttons_Down"
+            android:layout_below="@+id/chackBoxRememerme"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/login" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

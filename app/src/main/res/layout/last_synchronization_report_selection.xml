@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner_modulenames_lastsynreportselection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/medium_text"></Spinner>
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <EditText
+        android:id="@+id/no_of_days_edt_lastsynreportselection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:hint="No of days"
+        android:inputType="number"
+        android:nextFocusLeft="@id/no_of_days_edt_lastsynreportselection"
+        android:nextFocusUp="@id/no_of_days_edt_lastsynreportselection"
+        android:textSize="@dimen/listview_row_textview"></EditText>
+
+    <CheckBox
+        android:id="@+id/set_as_default_checkbox_lastsynreportselection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:text="Set as default"
+        android:textSize="@dimen/medium_text" />
+
+    <Button
+        android:id="@+id/get_records_lastsynreportselection"
+        style="@style/Confirm_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:text="@string/get_records"
+        android:textSize="@dimen/medium_text" />
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sub_task_name_issues_status_child_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/issues_symbol_issues_status_child_row"
+        android:gravity="left"
+        android:text="South finishing wall"
+        android:textColor="@color/blackdark"
+
+        />
+
+    <TextView
+        android:id="@+id/issues_symbol_issues_status_child_row"
+        style="@style/Issues_Symbol_textview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+
+
+        />
+
+    <TextView
+        android:id="@+id/balance_qty_issues_status_child_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sub_task_name_issues_status_child_row"
+
+        android:gravity="start"
+        android:text="Balc Qty.10.00" />
+
+
+    <TextView
+        android:id="@+id/qtycompleted_issues_status_child_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_below="@+id/sub_task_name_issues_status_child_row"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="left"
+        android:text="completed_qty" />
+
+
+    <TextView
+        android:id="@+id/totalqty_issues_status_child_row"
+        style="@style/Listview_subtext_row_textview"
+
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sub_task_name_issues_status_child_row"
+
+        android:gravity="left"
+
+
+        android:text="total_qty" />
+
+
+</RelativeLayout>

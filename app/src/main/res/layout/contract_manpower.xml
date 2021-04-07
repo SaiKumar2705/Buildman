@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+  <LinearLayout       
+            android:id="@+id/listview_linearlayout_contract_manpower"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"         
+     android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+      
+         >
+    <ListView
+        android:id="@+id/listview_contract_manpower"
+       	style="@style/Listview"
+        android:divider="@color/yellow"
+        android:dividerHeight="1dip"
+        android:layout_margin="5dp"
+      >
+     </ListView>
+
+ </LinearLayout>
+
+</LinearLayout>

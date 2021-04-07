@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Dummy item to prevent EditText from receiving focus -->
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+    <!-- Editext for Search -->
+    <EditText
+        android:id="@+id/search_edt_kwgecenter"
+        style="@style/Edittext_Style"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="Search Title or Keywords"
+        android:inputType="textVisiblePassword"
+        android:nextFocusLeft="@id/search_edt_kwgecenter"
+        android:nextFocusUp="@id/search_edt_kwgecenter" />
+
+    <!-- List View -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/back_img_kwgecenter"
+        android:layout_below="@+id/search_edt_kwgecenter">
+
+        <LinearLayout
+            android:id="@+id/listview_linearlayout_kwgecenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <ListView
+                android:id="@+id/listview_kwgecenter"
+                style="@style/Listview"
+                android:layout_margin="5dp"
+                android:divider="@color/yellow"
+                android:dividerHeight="1dip"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/back_img_kwgecenter"
+        style="@style/BackImageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+
+        android:layout_marginRight="5dp" />
+
+</RelativeLayout>

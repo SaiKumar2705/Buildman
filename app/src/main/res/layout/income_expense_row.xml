@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/account_name_income_expense_row"
+        style="@style/Listview_row_textview"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+        android:text="Accout1" />
+
+    <TextView
+        android:id="@+id/issues_symbol_income_expense_row"
+        style="@style/Issues_Symbol_textview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+
+
+        />
+
+    <TextView
+        android:id="@+id/amount_type_income_expense_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/account_name_income_expense_row"
+
+        android:gravity="left"
+
+        android:text="credit card" />
+
+
+    <TextView
+        android:id="@+id/current_balance_income_expense_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/account_name_income_expense_row"
+        android:gravity="right"
+        android:text="Manpower" />
+
+</RelativeLayout>

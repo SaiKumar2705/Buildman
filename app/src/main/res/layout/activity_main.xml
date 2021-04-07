@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+
+            android:id="@+id/buildman_txv_mainactivity"
+              style="@style/CustomTextview"
+            android:layout_centerInParent="true"
+            android:padding="4dp"
+            android:text="@string/buildman"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/buildman_home"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/buildmantechnologies_mainactivity"
+            style="@style/CustomTextview"
+            android:layout_below="@+id/buildman_txv_mainactivity"
+            android:layout_centerHorizontal="true"
+            android:padding="2dp"
+            android:text="@string/poweredbuildmantechnologies"
+            android:textColor="@color/blackdark"
+            android:textSize="@dimen/poweredbuildmanTechnologies_home" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

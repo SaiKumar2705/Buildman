@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellowlight"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/contractor_title_supply_mp_description"
+            style="@style/CustomAction_Bar_Textview"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Mahesh" />
+
+        <Button
+            android:id="@+id/layout_hide_show_plus_supply_mp_description"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/plus" />
+
+        <TextView
+
+            android:id="@+id/summary_supply_mp_description"
+            style="@style/Summary_Textview"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/layout_hide_show_plus_supply_mp_description"
+            android:text="@string/summary" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/hide_show_supply_mp_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/totalamt_title_summary_supply_mp_description"
+                style="@style/Description_Row_Textview"
+                android:layout_alignParentLeft="true"
+                android:text="@string/total_amt" />
+
+            <TextView
+                android:id="@+id/totalamt_rs_summary_supply_mp_description"
+                style="@style/Description_Row_Textview"
+                android:layout_alignParentRight="true"
+                android:text="Rs 0.00" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/totalpaid_tite_qty_summary_supply_mp_description"
+                style="@style/Description_Row_Textview"
+                android:layout_alignParentLeft="true"
+                android:text="@string/total_paid" />
+
+            <TextView
+                android:id="@+id/totalpaid_rs_summary_supply_mp_description"
+                style="@style/Description_Row_Textview"
+                android:layout_alignParentRight="true"
+                android:text="Rs 0.00" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/totalbalance_tite_qty_summary_supply_mp_description"
+                style="@style/Description_Row_Textview"
+                android:layout_alignParentLeft="true"
+                android:text="@string/total_balance" />
+
+            <TextView
+                android:id="@+id/totalbalance_rs_summary_supply_mp_description"
+                style="@style/Description_Row_Textview"
+                android:layout_alignParentRight="true"
+                android:text="Rs 0.00" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gray_bar_material">
+
+        <TextView
+            android:id="@+id/present_labourtype_supply_mp_description"
+            style="@style/ArrowedChanged_Textview"
+            android:layout_centerInParent="true"
+            android:text="Labour-M" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/rate_title_supply_mp_description"
+                            style="@style/Description_Row_Textview"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/rate" />
+
+                        <TextView
+                            android:id="@+id/rate_rs_supply_mp_description"
+                            style="@style/Description_Row_Textview"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right"
+                            android:text="" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/total_qty_title_supply_mp_description"
+                            style="@style/Description_Row_Textview"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/total_qty" />
+
+                        <TextView
+                            android:id="@+id/total_qty_rs_supply_mp_description"
+                            style="@style/Description_Row_Textview"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right"
+                            android:text="" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/total_amt_title_supply_mp_description"
+                            style="@style/Description_Row_Textview"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/total_amt" />
+
+                        <TextView
+                            android:id="@+id/total_amt_rs_supply_mp_description"
+                            style="@style/Description_Row_Textview"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right"
+                            android:text="" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/current_qty_title_supply_mp_description"
+                                style="@style/Description_Row_Textview"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/current_qty" />
+                            <!-- Dummy item to prevent EditText from receiving focus -->
+                            <LinearLayout
+                                android:layout_width="0px"
+                                android:layout_height="0px"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true" />
+
+                            <EditText
+                                android:id="@+id/current_qty_rs_supply_mp_description"
+                                style="@style/Edittext_Style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/current_qty_title_supply_mp_description"
+                                android:background="@drawable/edittext"
+                                android:gravity="right"
+                                android:inputType="numberDecimal"
+                                android:nextFocusLeft="@id/current_qty_rs_supply_mp_description"
+                                android:nextFocusUp="@id/current_qty_rs_supply_mp_description"
+                                android:text="0" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/update_supply_mp_description"
+                            style="@style/UpdateButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/update" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/gray"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/current_amt_rs_supply_mp_description"
+                                style="@style/Description_Row_Textview"
+                                android:layout_alignParentRight="true"
+                                android:text="Rs 0.00" />
+
+                            <TextView
+                                android:id="@+id/current_amt_title_supply_mp_description"
+                                style="@style/Description_Row_Textview"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/current_amt" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/total_till_date_qty_rs_supply_mp_description"
+                                style="@style/Description_Row_Textview"
+                                android:layout_alignParentRight="true"
+                                android:text="0.00" />
+
+                            <TextView
+                                android:id="@+id/total_till_date_qty_title_supply_mp_description"
+                                style="@style/Description_Row_Textview"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/total_till_date_qty" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/gray"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/totaltilldate_rs_supply_mp_description"
+                                style="@style/Description_Row_Textview"
+                                android:layout_alignParentRight="true"
+                                android:text="Rs 0.00" />
+
+                            <TextView
+                                android:id="@+id/totaltilldate_title_supply_mp_description"
+                                style="@style/Description_Row_Textview"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/total_till_date_amount" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/paid_tite_supply_mp_description"
+                                style="@style/Description_Row_Textview"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/paid" />
+
+                            <TextView
+                                android:id="@+id/paid_rs_supply_mp_description"
+                                style="@style/Description_Row_Textview"
+                                android:layout_alignParentRight="true"
+                                android:text="Rs 0.00" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/gray"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/balance_title_supply_mp_description"
+                                style="@style/Description_Row_Textview"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/balance" />
+
+                            <TextView
+                                android:id="@+id/balance_rs_supply_mp_description"
+                                style="@style/Description_Row_Textview"
+                                android:layout_alignParentRight="true"
+                                android:text="Rs 0.00" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white">
+
+                            <TextView
+                                android:id="@+id/transaction_datetime_title_txv_supply_mp_description"
+                                style="@style/Description_Row_Textview"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/transaction_date" />
+
+                            <TextView
+                                android:id="@+id/transaction_datetime_txv_supply_mp_description"
+                                style="@style/Description_Row_Textview"
+                                android:layout_toLeftOf="@+id/transaction_datetime_calender_img_supply_mp_description"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="8-10-2015 22:55:00" />
+
+                            <ImageView
+                                android:id="@+id/transaction_datetime_calender_img_supply_mp_description"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/calender_date_tme" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="6"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_supply_mp_description"
+                style="@style/BackImageview"
+
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="3" />
+
+            <Button
+                android:id="@+id/confirm_supply_mp_description"
+
+                style="@style/Confirm_Button"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+
+                android:layout_weight="1"
+                android:text="@string/confirm" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/task_name_status_report_parent_row"
+        style="@style/Listview_row_textview"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_toLeftOf="@+id/sum_total_billable_amt_status_report_parent_row"
+        android:padding="10dp"
+        android:text="hsd;fh;g" />
+
+    <TextView
+        android:id="@+id/sum_total_billable_amt_status_report_parent_row"
+        style="@style/Listview_row_textview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:text="hsd;fh;g"
+
+        />
+
+
+</RelativeLayout>

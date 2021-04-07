@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/date_income_expense_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="12-10-2015" />
+
+    <TextView
+        android:id="@+id/payer_income_expense_row"
+        style="@style/Listview_row_textview"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+        android:text="Accout1" />
+
+
+    <TextView
+        android:id="@+id/pay_method_income_expense_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_below="@+id/payer_income_expense_row"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/amt_income_expense_row"
+        android:gravity="right"
+
+        android:text="credit card" />
+
+    <TextView
+        android:id="@+id/amt_income_expense_row"
+
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/date_income_expense_row"
+
+        android:gravity="right"
+        android:text="12.00" />
+
+    <TextView
+        android:id="@+id/category_income_expense_row"
+        style="@style/Listview_subtext_row_textview"
+        android:layout_alignParentLeft="true"
+
+        android:layout_below="@+id/payer_income_expense_row"
+
+        android:text="Manpower" />
+
+</RelativeLayout>

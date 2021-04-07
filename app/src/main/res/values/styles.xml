@@ -1,0 +1,285 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+
+    <!-- My own creation of Application theme. -->
+    <style name="MyAppActionBarTheme" parent="android:Theme.Holo.Light">
+        <item name="android:popupMenuStyle">@style/MyApp.PopupMenu</item>
+        <item name="android:actionBarStyle">@style/MyApp.ActionBar</item>
+        <item name="android:actionBarWidgetTheme">@style/PopupMenuTextView</item>
+
+    </style>
+
+    <!-- The beef: background color for Action Bar overflow menu -->
+    <style name="MyApp.PopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/gray</item>
+    </style>
+
+    <!-- Bonus: if you want to style whole Action Bar, not just the menu -->
+    <style name="MyApp.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid">
+        <!-- Blue background color & black bottom border -->
+        <item name="android:background">@color/yellowlight</item>
+        <item name="android:shadowColor">@color/orange</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+    <!--     change text size for action bar title -->
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance">
+        <!--   <item name="android:textColor">@color/color_title</item> -->
+        <item name="android:textSize">@dimen/actionbar_title_textview</item>
+    </style>
+    <!-- Change Overflow Menu ListView Text Size and Text Size -->
+
+    <style name="PopupMenuTextView" parent="android:style/Theme.Holo.Light">
+        <item name="android:textColor">@color/blacklight</item>
+        <item name="android:textSize">@dimen/overflow_menu_text</item>
+    </style>
+
+    <!-- Textview style -->
+    <style name="CustomTextview" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+    </style>
+
+    <!-- Edittext style -->
+    <style name="Edittext_Style" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+    </style>
+    <!--  button style -->
+    <style name="Buttons_Down" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:background">@color/yellowlight</item>
+    </style>
+
+    <!--  (Material,manpower,machinery,exp,statsus)home Imageview style -->
+    <style name="Home_Down_Imgview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--  (Material,manpower,machinery,exp,statsus)home texviews style -->
+    <style name="Home_Down_Textview">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/home_down_icons_textview</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- listview headers textview -->
+    <style name="Listview_Headers_Textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/listview_headers_textview</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- listview  -->
+    <style name="Listview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- listview normal row text -->
+    <style name="Listview_normal_row_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/listview_normal_row_textview_padding</item>
+        <item name="android:textColor">@color/blacklight</item>
+        <item name="android:textSize">@dimen/listview_row_textview</item>
+    </style>
+    <!-- listview row text -->
+    <style name="Listview_row_textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/listview_row_textview_paddingleft_right</item>
+        <item name="android:paddingRight">@dimen/listview_row_textview_paddingleft_right</item>
+        <item name="android:paddingTop">@dimen/listview_row_textview_top_padding</item>
+        <item name="android:paddingBottom">@dimen/listview_row_textview_bottom_padding</item>
+        <item name="android:textColor">@color/blackdark</item>
+        <item name="android:textSize">@dimen/listview_row_textview</item>
+    </style>
+    <!-- listview row text -->
+    <style name="Listview_subtext_row_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/listview_row_subtextview_padding</item>
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:textSize">@dimen/listview_row_subtextview</item>
+    </style>
+
+    <style name="Issues_Symbol_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/issues_symbol_textview</item>
+
+    </style>
+
+    <style name="Images_Symbol_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">2dp</item>
+
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/issues_symbol_textview</item>
+
+    </style>
+
+    <style name="Thumb_Imageview">
+        <item name="android:layout_width">@dimen/thumb_image_layout_width_height</item>
+        <item name="android:layout_height">@dimen/thumb_image_layout_width_height</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <!-- expenses listview row text -->
+    <style name="Expenses_Listview_row_textview">
+        <item name="android:textColor">@color/blacklight</item>
+        <item name="android:textSize">@dimen/listview_row_textview</item>
+    </style>
+
+    <!-- Description Custom Action BarTextview style -->
+    <style name="CustomAction_Bar_Textview" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/bar_headers</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Arrow Changed Textview style in Description classes-->
+    <style name="ArrowedChanged_Textview" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/bar_headers</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+    </style>
+
+    <!--Description Row Textview style in Description classes-->
+    <style name="Description_Row_Textview" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/blacklight</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Update button-->
+    <style name="UpdateButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:background">@color/yellowlight</item>
+    </style>
+
+    <!--Back Imageview-->
+    <style name="BackImageview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/back</item>
+        <item name="android:background">@color/yellowlight</item>
+
+    </style>
+
+    <!--Confirm_Button-->
+    <style name="Confirm_Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/confirm</item>
+        <item name="android:background">@color/yellowlight</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">@string/confirm</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Summary Textview Attendance_Details-->
+    <style name="Summary_Textview" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:textSize">@dimen/summary_textview</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Add button(Plus) Expenses-->
+    <style name="Add_Button">
+        <item name="android:layout_width">@dimen/add_button_layout_width</item>
+        <item name="android:layout_height">@dimen/add_button_layout_height</item>
+        <item name="android:background">@drawable/add</item>
+    </style>
+
+    <!--Total Sum Amount in expenses -->
+    <style name="Total_Sum_Amount_Textview" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/blacklight</item>
+        <item name="android:textSize">@dimen/total_sum_amount_expense_textview</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Calculator_Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/calculator_button_textview</item>
+        <item name="android:textColor">@color/blacklight</item>
+        <item name="android:padding">1dp</item>
+    </style>
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:itemBackground">#ffffff</item>
+        <item name="colorAccent">@color/colorPrimaryBlue</item>
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="android:colorForeground">@color/colorPrimaryBlue</item>
+        <item name="android:colorForegroundInverse">@color/foreground_material_light</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorControlActivated">@color/colorPrimaryBlue</item>
+        <item name="colorControlHighlight">@color/colorPrimaryBlue</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryBlue</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

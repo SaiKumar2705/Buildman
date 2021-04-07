@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
+
+
+
+<!--<network-security-config>-->
+
+<!--    -->
+
+<!--    <domain-config cleartextTrafficPermitted="false">-->
+<!--        <domain includeSubdomains="true">rfs-azu-w001.centralindia.cloudapp.azure.com</domain>-->
+<!--        <domain includeSubdomains="true">rfs-azu-a017.centralindia.cloudapp.azure.com</domain>-->
+<!--        <domain includeSubdomains="true">rfs-azp-w017.centralindia.cloudapp.azure.com:2047</domain>-->
+<!--    </domain-config>-->
+<!--</network-security-config>-->

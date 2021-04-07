@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/site_name_lastsynchreport_parent_row"
+        style="@style/Listview_row_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_toLeftOf="@+id/lastsynreport_symbol_lastsynchreport_parent_row"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="sdgvfhfj" />
+
+    <TextView
+        android:id="@+id/lastsynreport_symbol_lastsynchreport_parent_row"
+        style="@style/Issues_Symbol_textview"
+        android:layout_marginRight="4dp"
+
+        android:layout_toLeftOf="@+id/call_img_lastsynchreport_child_row"
+        android:gravity="right"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/call_img_lastsynchreport_child_row"
+        style="@style/Add_Button"
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/call"
+        android:gravity="left" />
+
+</RelativeLayout>

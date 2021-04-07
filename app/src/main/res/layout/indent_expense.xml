@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="4"
+        android:background="@color/bluelight"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header1_income_expense"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/amt_header_exp_indent"
+
+                style="@style/Listview_Headers_Textview"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:text="@string/amount" />
+
+            <View
+                android:id="@+id/view_exp_indent"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/date_header_exp_indent"
+
+                style="@style/Listview_Headers_Textview"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/date" />
+
+            <TextView
+                android:id="@+id/payer_cat_header_exp_indent"
+
+                style="@style/Listview_Headers_Textview"
+                android:layout_alignBaseline="@+id/date_header_exp_indent"
+                android:layout_alignBottom="@+id/date_header_exp_indent"
+                android:layout_toLeftOf="@+id/view_exp_indent"
+                android:text="@string/payer_category" />
+
+            <TextView
+                android:id="@+id/pay_method_header_exp_indent"
+
+
+                style="@style/Listview_Headers_Textview"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/view_exp_indent"
+                android:gravity="center"
+                android:text="@string/pay_method" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listview_exp_indent"
+            style="@style/Listview"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"></ListView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="4">
+
+        <Button
+            android:id="@+id/add_btn_exp_indent"
+            style="@style/Add_Button"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp" />
+
+
+        <TextView
+            android:id="@+id/sum_amt_exp_indent"
+            style="@style/Total_Sum_Amount_Textview"
+            android:layout_alignBaseline="@+id/add_btn_exp_indent"
+            android:layout_alignBottom="@+id/add_btn_exp_indent"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text="100000" />
+
+    </RelativeLayout>
+
+</LinearLayout>

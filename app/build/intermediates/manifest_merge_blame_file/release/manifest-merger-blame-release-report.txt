@@ -1,0 +1,592 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.buildman.buildman.activity"
+4    android:versionCode="23"
+5    android:versionName="2.2.4" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml
+10
+11    <!-- android:versionCode="17" -->
+12    <!-- android:versionName="2.2.3"> -->
+13
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:8:5-67
+14-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:9:5-79
+15-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+16-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:10:5-76
+16-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:10:22-73
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:11:5-65
+17-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:11:22-62
+18
+19    <uses-feature android:name="android.hardware.camera" />
+19-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:13:5-60
+19-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:13:19-57
+20    <uses-feature android:name="android.hardware.camera.autofocus" />
+20-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:14:5-70
+20-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:14:19-67
+21
+22    <uses-permission android:name="android.permission.CALL_PHONE" />
+22-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:16:5-69
+22-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:16:22-66
+23    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+23-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:17:5-75
+23-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:17:22-72
+24    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+24-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:18:5-80
+24-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:18:22-77
+25    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+25-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:19:5-81
+25-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:19:22-78
+26
+27    <supports-screens
+27-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:22:5-27:40
+28        android:anyDensity="true"
+28-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:23:9-34
+29        android:largeScreens="true"
+29-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:24:9-36
+30        android:normalScreens="true"
+30-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:25:9-37
+31        android:smallScreens="true"
+31-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:26:9-36
+32        android:xlargeScreens="true" />
+32-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:27:9-37
+33
+34    <application
+34-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:29:5-288:19
+35        android:allowBackup="false"
+35-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:31:9-36
+36        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+36-->[com.android.support:support-compat:28.0.0] C:\Users\sfpl\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+37        android:fullBackupOnly="false"
+37-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:32:9-39
+38        android:icon="@drawable/app_logo"
+38-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:33:9-42
+39        android:installLocation="internalOnly"
+39-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:34:9-47
+40        android:label="@string/app_name"
+40-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:35:9-41
+41        android:largeHeap="true"
+41-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:36:9-33
+42        android:networkSecurityConfig="@xml/network_security_config"
+42-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:40:9-69
+43        android:screenOrientation="portrait"
+43-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:37:9-45
+44        android:supportsRtl="true"
+44-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:38:9-35
+45        android:theme="@style/MyAppActionBarTheme" >
+45-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:39:9-51
+46        <activity
+46-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:42:9-54:20
+47            android:name="com.buildman.buildman.activity.MainActivity"
+47-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:44:13-41
+48            android:configChanges="orientation"
+48-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:45:13-48
+49            android:label="@string/app_name"
+49-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:46:13-45
+50            android:screenOrientation="portrait"
+50-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:47:13-49
+51            android:theme="@style/MyMaterialTheme.Base" >
+51-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:48:13-56
+52            <intent-filter>
+52-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:49:13-53:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:50:17-69
+53-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:50:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:52:17-77
+55-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:52:27-74
+56            </intent-filter>
+57        </activity>
+58        <activity
+58-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:55:9-59:52
+59            android:name="com.buildman.buildman.activity.Login"
+59-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:56:13-34
+60            android:configChanges="orientation"
+60-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:57:13-48
+61            android:screenOrientation="portrait"
+61-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:59:13-49
+62            android:theme="@style/MyMaterialTheme.Base" />
+62-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:58:13-56
+63        <activity
+63-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:60:9-64:52
+64            android:name="com.buildman.buildman.activity.Main2Activity"
+64-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:61:13-42
+65            android:configChanges="orientation"
+65-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:62:13-48
+66            android:screenOrientation="portrait"
+66-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:64:13-49
+67            android:theme="@style/MyMaterialTheme.Base" />
+67-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:63:13-56
+68        <activity
+68-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:65:9-68:52
+69            android:name="com.buildman.buildman.alarm.alarmactivity"
+69-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:66:13-69
+70            android:configChanges="orientation"
+70-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:67:13-48
+71            android:screenOrientation="portrait" />
+71-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:68:13-49
+72        <activity
+72-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:69:9-72:52
+73            android:name="com.buildman.buildman.activity.Home"
+73-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:70:13-33
+74            android:configChanges="orientation"
+74-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:71:13-48
+75            android:screenOrientation="portrait" />
+75-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:72:13-49
+76        <activity
+76-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:73:9-76:52
+77            android:name="com.buildman.buildman.materialtabs.MaterialTabs"
+77-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:74:13-75
+78            android:configChanges="orientation"
+78-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:75:13-48
+79            android:screenOrientation="portrait" />
+79-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:76:13-49
+80        <activity
+80-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:77:9-81:75
+81            android:name="com.buildman.buildman.materialtabs.Received_Material"
+81-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:78:13-80
+82            android:configChanges="orientation"
+82-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:79:13-48
+83            android:screenOrientation="portrait"
+83-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:80:13-49
+84            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+84-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:81:13-72
+85        <activity
+85-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:82:9-86:75
+86            android:name="com.buildman.buildman.materialtabs.Received_Material_Description"
+86-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:83:13-92
+87            android:configChanges="orientation"
+87-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:84:13-48
+88            android:screenOrientation="portrait"
+88-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:85:13-49
+89            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+89-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:86:13-72
+90        <activity
+90-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:87:9-91:75
+91            android:name="com.buildman.buildman.materialtabs.Used_Material"
+91-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:88:13-76
+92            android:configChanges="orientation"
+92-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:89:13-48
+93            android:screenOrientation="portrait"
+93-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:90:13-49
+94            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+94-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:91:13-72
+95        <activity
+95-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:92:9-96:75
+96            android:name="com.buildman.buildman.materialtabs.Used_Material_Description"
+96-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:93:13-88
+97            android:configChanges="orientation"
+97-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:94:13-48
+98            android:screenOrientation="portrait"
+98-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:95:13-49
+99            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+99-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:96:13-72
+100        <activity
+100-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:97:9-100:52
+101            android:name="com.buildman.buildman.materialtabs.TasksList"
+101-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:98:13-72
+102            android:configChanges="orientation"
+102-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:99:13-48
+103            android:screenOrientation="portrait" />
+103-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:100:13-49
+104        <activity
+104-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:101:9-105:75
+105            android:name="com.buildman.buildman.materialtabs.Indent_Material"
+105-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:102:13-78
+106            android:configChanges="orientation"
+106-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:103:13-48
+107            android:screenOrientation="portrait"
+107-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:104:13-49
+108            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+108-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:105:13-72
+109        <activity
+109-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:106:9-110:75
+110            android:name="com.buildman.buildman.materialtabs.Indent_Material_Description"
+110-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:107:13-90
+111            android:configChanges="orientation"
+111-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:108:13-48
+112            android:screenOrientation="portrait"
+112-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:109:13-49
+113            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+113-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:110:13-72
+114        <activity
+114-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:111:9-114:52
+115            android:name="com.buildman.buildman.manpowertabs.ManpowerTabs"
+115-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:112:13-75
+116            android:configChanges="orientation"
+116-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:113:13-48
+117            android:screenOrientation="portrait" />
+117-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:114:13-49
+118        <activity
+118-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:115:9-119:75
+119            android:name="com.buildman.buildman.manpowertabs.Supply_Manpower"
+119-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:116:13-78
+120            android:configChanges="orientation"
+120-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:117:13-48
+121            android:screenOrientation="portrait"
+121-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:118:13-49
+122            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+122-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:119:13-72
+123        <activity
+123-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:120:9-124:75
+124            android:name="com.buildman.buildman.manpowertabs.Supply_Manpower_Description"
+124-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:121:13-90
+125            android:configChanges="orientation"
+125-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:122:13-48
+126            android:screenOrientation="portrait"
+126-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:123:13-49
+127            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+127-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:124:13-72
+128        <activity
+128-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:125:9-129:75
+129            android:name="com.buildman.buildman.manpowertabs.Contract_Manpower"
+129-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:126:13-80
+130            android:configChanges="orientation"
+130-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:127:13-48
+131            android:screenOrientation="portrait"
+131-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:128:13-49
+132            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+132-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:129:13-72
+133        <activity
+133-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:130:9-134:75
+134            android:name="com.buildman.buildman.manpowertabs.Contract_Manpower_Description"
+134-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:131:13-92
+135            android:configChanges="orientation"
+135-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:132:13-48
+136            android:screenOrientation="portrait"
+136-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:133:13-49
+137            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+137-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:134:13-72
+138        <activity
+138-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:135:9-139:75
+139            android:name="com.buildman.buildman.manpowertabs.Indent_Manpower"
+139-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:136:13-78
+140            android:configChanges="orientation"
+140-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:137:13-48
+141            android:screenOrientation="portrait"
+141-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:138:13-49
+142            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+142-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:139:13-72
+143        <activity
+143-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:140:9-143:52
+144            android:name="com.buildman.buildman.expensestabs.ExpenseTabs"
+144-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:141:13-74
+145            android:configChanges="orientation"
+145-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:142:13-48
+146            android:screenOrientation="portrait" />
+146-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:143:13-49
+147        <activity
+147-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:144:9-148:75
+148            android:name="com.buildman.buildman.expensestabs.Income_Expense"
+148-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:145:13-77
+149            android:configChanges="orientation"
+149-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:146:13-48
+150            android:screenOrientation="portrait"
+150-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:147:13-49
+151            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+151-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:148:13-72
+152        <activity
+152-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:149:9-153:75
+153            android:name="com.buildman.buildman.expensestabs.Income_Expense_Description"
+153-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:150:13-89
+154            android:configChanges="orientation"
+154-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:151:13-48
+155            android:screenOrientation="portrait"
+155-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:152:13-49
+156            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+156-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:153:13-72
+157        <activity
+157-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:154:9-157:52
+158            android:name="com.buildman.buildman.expensestabs.Amount_Calculator"
+158-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:155:13-80
+159            android:configChanges="orientation"
+159-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:156:13-48
+160            android:screenOrientation="portrait" />
+160-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:157:13-49
+161        <activity
+161-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:158:9-161:52
+162            android:name="com.buildman.buildman.expensestabs.Category_List"
+162-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:159:13-76
+163            android:configChanges="orientation"
+163-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:160:13-48
+164            android:screenOrientation="portrait" />
+164-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:161:13-49
+165        <activity
+165-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:162:9-165:52
+166            android:name="com.buildman.buildman.expensestabs.Cheque_Status_List"
+166-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:163:13-81
+167            android:configChanges="orientation"
+167-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:164:13-48
+168            android:screenOrientation="portrait" />
+168-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:165:13-49
+169        <activity
+169-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:166:9-169:52
+170            android:name="com.buildman.buildman.expensestabs.Payer_List"
+170-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:167:13-73
+171            android:configChanges="orientation"
+171-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:168:13-48
+172            android:screenOrientation="portrait" />
+172-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:169:13-49
+173        <activity
+173-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:170:9-173:52
+174            android:name="com.buildman.buildman.expensestabs.PayMethod_List"
+174-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:171:13-77
+175            android:configChanges="orientation"
+175-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:172:13-48
+176            android:screenOrientation="portrait" />
+176-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:173:13-49
+177        <activity
+177-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:174:9-177:52
+178            android:name="com.buildman.buildman.expensestabs.Tax_Calculator"
+178-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:175:13-77
+179            android:configChanges="orientation"
+179-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:176:13-48
+180            android:screenOrientation="portrait" />
+180-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:177:13-49
+181        <activity
+181-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:178:9-181:52
+182            android:name="com.buildman.buildman.expensestabs.Contractor_List"
+182-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:179:13-78
+183            android:configChanges="orientation"
+183-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:180:13-48
+184            android:screenOrientation="portrait" />
+184-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:181:13-49
+185        <activity
+185-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:182:9-185:52
+186            android:name="com.buildman.buildman.expensestabs.Expense_Expense"
+186-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:183:13-78
+187            android:configChanges="orientation"
+187-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:184:13-48
+188            android:screenOrientation="portrait" />
+188-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:185:13-49
+189        <activity
+189-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:186:9-190:75
+190            android:name="com.buildman.buildman.expensestabs.Expense_Expense_Description"
+190-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:187:13-90
+191            android:configChanges="orientation"
+191-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:188:13-48
+192            android:screenOrientation="portrait"
+192-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:189:13-49
+193            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+193-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:190:13-72
+194        <activity
+194-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:191:9-195:75
+195            android:name="com.buildman.buildman.expensestabs.Indent_Expense"
+195-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:192:13-77
+196            android:configChanges="orientation"
+196-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:193:13-48
+197            android:screenOrientation="portrait"
+197-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:194:13-49
+198            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+198-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:195:13-72
+199        <activity
+199-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:196:9-200:75
+200            android:name="com.buildman.buildman.expensestabs.Indent_Expense_Description"
+200-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:197:13-89
+201            android:configChanges="orientation"
+201-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:198:13-48
+202            android:screenOrientation="portrait"
+202-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:199:13-49
+203            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+203-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:200:13-72
+204        <activity
+204-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:201:9-204:52
+205            android:name="com.buildman.buildman.activity.GetMy_Sites"
+205-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:202:13-40
+206            android:configChanges="orientation"
+206-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:203:13-48
+207            android:screenOrientation="portrait" />
+207-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:204:13-49
+208        <activity
+208-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:205:9-208:52
+209            android:name="com.buildman.buildman.materialtabs.GetMy_Materials"
+209-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:206:13-78
+210            android:configChanges="orientation"
+210-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:207:13-48
+211            android:screenOrientation="portrait" />
+211-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:208:13-49
+212        <activity
+212-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:209:9-212:52
+213            android:name="com.buildman.buildman.activity.UserSites"
+213-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:210:13-38
+214            android:configChanges="orientation"
+214-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:211:13-48
+215            android:screenOrientation="portrait" />
+215-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:212:13-49
+216        <activity
+216-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:213:9-216:53
+217            android:name="com.buildman.buildman.activity.Dashboard"
+217-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:214:13-38
+218            android:configChanges="orientation"
+218-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:215:13-48
+219            android:screenOrientation="landscape" />
+219-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:216:13-50
+220        <activity
+220-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:217:9-220:53
+221            android:name="com.buildman.buildman.activity.Material_Dashboard"
+221-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:218:13-47
+222            android:configChanges="orientation"
+222-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:219:13-48
+223            android:screenOrientation="landscape" />
+223-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:220:13-50
+224        <activity
+224-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:221:9-224:52
+225            android:name="com.buildman.buildman.statustabs.StatusTabs"
+225-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:222:13-71
+226            android:configChanges="orientation"
+226-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:223:13-48
+227            android:screenOrientation="portrait" />
+227-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:224:13-49
+228        <activity
+228-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:225:9-229:75
+229            android:name="com.buildman.buildman.statustabs.Status_Status"
+229-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:226:13-74
+230            android:configChanges="orientation"
+230-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:227:13-48
+231            android:screenOrientation="portrait"
+231-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:228:13-49
+232            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+232-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:229:13-72
+233        <activity
+233-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:230:9-234:75
+234            android:name="com.buildman.buildman.statustabs.Images_Status"
+234-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:231:13-74
+235            android:configChanges="orientation"
+235-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:232:13-48
+236            android:screenOrientation="portrait"
+236-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:233:13-49
+237            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+237-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:234:13-72
+238        <activity
+238-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:235:9-239:75
+239            android:name="com.buildman.buildman.statustabs.Issues_Status"
+239-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:236:13-74
+240            android:configChanges="orientation"
+240-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:237:13-48
+241            android:screenOrientation="portrait"
+241-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:238:13-49
+242            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+242-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:239:13-72
+243        <activity
+243-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:240:9-244:75
+244            android:name="com.buildman.buildman.statustabs.Status_Status_Description"
+244-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:241:13-86
+245            android:configChanges="orientation"
+245-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:242:13-48
+246            android:screenOrientation="portrait"
+246-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:243:13-49
+247            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+247-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:244:13-72
+248        <activity
+248-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:245:9-248:52
+249            android:name="com.buildman.buildman.statustabs.Status_Report"
+249-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:246:13-74
+250            android:configChanges="orientation"
+250-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:247:13-48
+251            android:screenOrientation="portrait" />
+251-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:248:13-49
+252        <activity
+252-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:249:9-253:75
+253            android:name="com.buildman.buildman.statustabs.Issues_Status_Description"
+253-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:250:13-86
+254            android:configChanges="orientation"
+254-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:251:13-48
+255            android:screenOrientation="portrait"
+255-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:252:13-49
+256            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+256-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:253:13-72
+257        <activity
+257-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:254:9-258:75
+258            android:name="com.buildman.buildman.statustabs.Images_Status_Description"
+258-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:255:13-86
+259            android:configChanges="orientation"
+259-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:256:13-48
+260            android:screenOrientation="portrait"
+260-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:257:13-49
+261            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+261-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:258:13-72
+262        <activity
+262-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:259:9-262:52
+263            android:name="com.buildman.buildman.statustabs.Images_Status_Description_FullImage"
+263-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:260:13-96
+264            android:configChanges="orientation"
+264-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:261:13-48
+265            android:screenOrientation="portrait" />
+265-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:262:13-49
+266        <activity
+266-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:263:9-266:52
+267            android:name="com.buildman.buildman.materialtabs.Choose_Material"
+267-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:264:13-78
+268            android:configChanges="orientation"
+268-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:265:13-48
+269            android:screenOrientation="portrait" />
+269-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:266:13-49
+270        <activity
+270-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:267:9-270:52
+271            android:name="com.buildman.buildman.statustabs.Last_Synchronization_Report"
+271-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:268:13-88
+272            android:configChanges="orientation"
+272-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:269:13-48
+273            android:screenOrientation="portrait" />
+273-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:270:13-49
+274        <activity
+274-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:271:9-274:52
+275            android:name="com.buildman.buildman.statustabs.Last_Synchronization_Report_Selection"
+275-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:272:13-98
+276            android:configChanges="orientation"
+276-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:273:13-48
+277            android:screenOrientation="portrait" />
+277-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:274:13-49
+278        <activity
+278-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:275:9-278:52
+279            android:name="com.buildman.buildman.knowledgecenter.KnowledgeCenter"
+279-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:276:13-81
+280            android:configChanges="orientation"
+280-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:277:13-48
+281            android:screenOrientation="portrait" />
+281-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:278:13-49
+282        <activity
+282-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:279:9-282:52
+283            android:name="com.buildman.buildman.knowledgecenter.Documents"
+283-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:280:13-75
+284            android:configChanges="orientation"
+284-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:281:13-48
+285            android:screenOrientation="portrait" />
+285-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:282:13-49
+286        <activity android:name="com.buildman.buildman.activity.Sample" />
+286-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:283:9-44
+286-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:283:19-41
+287        <activity android:name="com.buildman.buildman.statustabs.Issuevew" />
+287-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:284:9-78
+287-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:284:19-75
+288        <activity android:name="com.buildman.buildman.statustabs.FullScreenImageActivity" />
+288-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:285:9-93
+288-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:285:19-90
+289
+290        <uses-library
+290-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:287:9-88
+291            android:name="org.apache.http.legacy"
+291-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:287:23-60
+292            android:required="false" />
+292-->F:\BM\BM_171017\app\src\main\AndroidManifest.xml:287:61-85
+293
+294        <provider
+294-->[com.squareup.picasso:picasso:2.71828] C:\Users\sfpl\.gradle\caches\transforms-2\files-2.1\9f3a5d95a9efec40961bdabf3dd85d40\picasso-2.71828\AndroidManifest.xml:8:9-11:40
+295            android:name="com.squareup.picasso.PicassoProvider"
+295-->[com.squareup.picasso:picasso:2.71828] C:\Users\sfpl\.gradle\caches\transforms-2\files-2.1\9f3a5d95a9efec40961bdabf3dd85d40\picasso-2.71828\AndroidManifest.xml:9:13-64
+296            android:authorities="com.buildman.buildman.activity.com.squareup.picasso"
+296-->[com.squareup.picasso:picasso:2.71828] C:\Users\sfpl\.gradle\caches\transforms-2\files-2.1\9f3a5d95a9efec40961bdabf3dd85d40\picasso-2.71828\AndroidManifest.xml:10:13-72
+297            android:exported="false" />
+297-->[com.squareup.picasso:picasso:2.71828] C:\Users\sfpl\.gradle\caches\transforms-2\files-2.1\9f3a5d95a9efec40961bdabf3dd85d40\picasso-2.71828\AndroidManifest.xml:11:13-37
+298    </application>
+299
+300</manifest>

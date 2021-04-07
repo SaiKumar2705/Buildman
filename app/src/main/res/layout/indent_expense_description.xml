@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/yellowlight"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/indent_title_exp_indent_descp"
+
+            style="@style/CustomAction_Bar_Textview"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/raise_indent" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@color/bluelight">
+
+                    <ImageView
+                        android:id="@+id/prev_exp_indent_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/previous_arrow" />
+
+                    <ImageView
+                        android:id="@+id/next_exp_indent_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/next_arrow" />
+
+                    <Button
+                        android:id="@+id/present_category_exp_indent_descp"
+
+                        style="@style/ArrowedChanged_Textview"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="1dp"
+                        android:layout_toRightOf="@+id/prev_exp_indent_descp"
+                        android:background="@color/bluelight"
+                        android:text="@string/manpower" />
+
+                    <TextView
+                        android:id="@+id/colon"
+
+                        style="@style/ArrowedChanged_Textview"
+                        android:layout_centerInParent="true"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/sub_category_txv"
+
+                        style="@style/ArrowedChanged_Textview"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/colon"
+                        android:text="@string/mahesh" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:padding="1dp">
+
+                        <Button
+                            android:id="@+id/datebtn_exp_indent_descp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/ic_launcher"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/time_txv_exp_indent_descp"
+                            style="@style/Description_Row_Textview"
+                            android:layout_alignBaseline="@+id/datebtn_exp_indent_descp"
+                            android:layout_alignBottom="@+id/datebtn_exp_indent_descp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/datebtn_exp_indent_descp"
+                            android:clickable="true"
+                            android:onClick="click"
+                            android:text="22.11" />
+
+                        <TextView
+                            android:id="@+id/date_result_txv_exp_indent_descp"
+                            style="@style/Description_Row_Textview"
+
+                            android:layout_centerInParent="true"
+                            android:text="30-06-2015" />
+
+                        <TextView
+                            android:id="@+id/date_title_txv_exp_indent_descp"
+                            style="@style/Description_Row_Textview"
+                            android:layout_alignBaseline="@+id/datebtn_exp_indent_descp"
+                            android:layout_alignBottom="@+id/datebtn_exp_indent_descp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/date" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/gray"
+                        android:padding="1dp">
+
+                        <TextView
+                            android:id="@+id/amount_title_txv_exp_indent_descp"
+                            style="@style/Description_Row_Textview"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/amount" />
+
+                        <Button
+                            android:id="@+id/atm_calculatorbtn_exp_indent_descp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/ic_launcher"
+                            android:gravity="center" />
+
+                        <EditText
+                            android:id="@+id/amount_edt_exp_indent_descp"
+                            style="@style/Edittext_Style"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/atm_calculatorbtn_exp_indent_descp"
+                            android:inputType="number" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:padding="1dp">
+
+                        <TextView
+                            android:id="@+id/payer_txv_exp_indent_descp"
+                            style="@style/Description_Row_Textview"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/payer" />
+
+                        <Button
+                            android:id="@+id/payerbtn_exp_indent_descp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/ic_launcher"
+                            android:gravity="center" />
+
+                        <EditText
+                            android:id="@+id/payer_edt_exp_indent_descp"
+                            style="@style/Edittext_Style"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/payerbtn_exp_indent_descp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/gray"
+                        android:padding="1dp">
+
+                        <Button
+                            android:id="@+id/paymethodbtn_exp_indent_descp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/ic_launcher"
+                            android:gravity="center" />
+
+
+                        <TextView
+                            android:id="@+id/paymethod_result_txv_exp_indent_descp"
+                            style="@style/Description_Row_Textview"
+                            android:layout_alignBaseline="@+id/paymethod_title_txv_exp_indent_descp"
+                            android:layout_alignBottom="@+id/paymethod_title_txv_exp_indent_descp"
+                            android:layout_centerInParent="true"
+                            android:text="@string/cash" />
+
+                        <TextView
+                            android:id="@+id/paymethod_title_txv_exp_indent_descp"
+                            style="@style/Description_Row_Textview"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/pay_method" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:padding="1dp">
+
+                        <Button
+                            android:id="@+id/check_statusbtn_exp_indent_descp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/ic_launcher"
+
+                            android:gravity="center" />
+
+                        <EditText
+                            android:id="@+id/check_edt_exp_indent_descp"
+
+                            style="@style/Edittext_Style"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3dp"
+                            android:layout_toLeftOf="@+id/status_txv_exp_indent_descp"
+                            android:hint="@string/ref_cheque_no"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/status_txv_exp_indent_descp"
+                            style="@style/Description_Row_Textview"
+                            android:layout_alignBaseline="@+id/check_edt_exp_indent_descp"
+                            android:layout_alignBottom="@+id/check_edt_exp_indent_descp"
+                            android:layout_marginRight="3dp"
+                            android:layout_toLeftOf="@+id/check_statusbtn_exp_indent_descp"
+                            android:text="@string/status" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/gray"
+                        android:padding="1dp">
+
+                        <ImageView
+                            android:id="@+id/descriptionImg_exp_indent_descp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/ic_launcher"
+
+                            android:gravity="center" />
+
+                        <EditText
+                            android:id="@+id/description_edt_exp_indent_descp"
+                            style="@style/Edittext_Style"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_toLeftOf="@+id/descriptionImg_exp_indent_descp"
+                            android:hint="@string/description" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:padding="1dp">
+
+                        <Button
+                            android:id="@+id/taxbtn_exp_indent_descp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/ic_launcher"
+
+                            android:gravity="center" />
+
+                        <EditText
+                            android:id="@+id/tax_edt_exp_indent_descp"
+                            style="@style/Edittext_Style"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/taxbtn_exp_indent_descp"
+
+                            android:hint="@string/tax"
+                            android:inputType="numberDecimal" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="5">
+
+        <ImageView
+            android:id="@+id/back_exp_indent_descp"
+            style="@style/BackImageview"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+
+            />
+
+        <Button
+            android:id="@+id/confirm_exp_indent_descp"
+            style="@style/Confirm_Button"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>

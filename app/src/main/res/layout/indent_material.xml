@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--  <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp"
+            android:layout_weight="8"
+             android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+       android:background="@color/bluelight" >
+        <TextView
+                android:id="@+id/material_header_indent_material"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+
+                android:text="@string/materials"
+               style="@style/Listview_Headers_Textview"
+               />
+            <TextView
+                android:id="@+id/units_header_indent_material"
+                android:layout_width="60dip"
+                android:layout_height="match_parent"
+
+               android:layout_centerVertical="true"
+                android:gravity="center"
+
+                android:text="@string/units"
+                style="@style/Listview_Headers_Textview"
+                 />
+            <TextView
+                android:id="@+id/currentstock_header_indent_material"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                     android:layout_weight="4"
+                android:gravity="right"
+
+              android:layout_gravity="center_vertical"
+                android:text="@string/curentstock"
+                 style="@style/Listview_Headers_Textview"
+                 />
+
+    <TextView
+                android:id="@+id/reqd_Stock_header_indent_material"
+                 android:layout_width="120dip"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="4"
+                android:gravity="right"
+
+                android:layout_centerVertical="true"
+                android:text="@string/reqd_stock"
+                style="@style/Listview_Headers_Textview"
+                />
+
+            </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@+id/listview_linearlayout_indent_matl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <ListView
+            android:id="@+id/listview_indent_material"
+            style="@style/Listview"
+            android:layout_margin="5dp"
+            android:divider="@color/yellow"
+            android:dividerHeight="1dip"></ListView>
+
+    </LinearLayout>
+
+</LinearLayout>
